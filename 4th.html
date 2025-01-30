@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+<body>
+    <h1>Form</h1>
+    <form action="" method="post">
+        <label for="username">Enter Name</label>
+        <input type="text" name="uname" id="uname" size="50" maxlength="50" placeholder="Enetr your name">
+        <br><br>
+
+
+        <lable for="pass">Enetr password: </lable>
+        <input type="password" name="pass1" id="pass" placeholder="password shoud be of at least 8 character">
+        <br><br>
+
+        <label for="email">Enetr the email: </label>
+        <input type="email" name="email1" id="email1" required>
+        <br><br>
+
+        <!-- for write a comments,review,feedback using textarea -->
+        <label for="review">wriet a movie review</label><br>
+        <textarea name="review" id="review" rows="9" cols="40">This is good movie</textarea>
+        <br><br>
+
+        <!-- for selecttion of languages -->
+        <label for="lang">Choose the language yo know:</label>
+        <input type="checkbox" name="lang" id="lang" value="Hin"><label for="Hindi">Hindi</label>
+        <input type="checkbox" name="lang" id="lang" value="Eng" checked><label for="English">English</label>
+        <input type="checkbox" name="lang" id="lang" value="span"><label for="spanish">spanish</label>
+        <input type="checkbox" name="lang" id="lang" value="fren"><label for="french">french</label>
+        <input type="checkbox" name="lang" id="lang" value="punj"><label for="punjabi">punjabi</label>
+        <br><br>
+
+        <!-- radio button -->
+        <label for="qual">Choose for highest qualification:</label>
+        <br>
+        <input type="radio" name="qual1" id="B.tech" value="B.tech">
+        <label for="B.tech">B.tech</label><br>
+        <input type="radio" name="qual1" id="M.tech" value="M.tech" checked>
+        <label for="M.tech">M.tech</label>
+        <br>
+        <input type="radio" name="qual1" id="ph.d" value="ph.d">
+        <label for="ph.d">ph.d</label>
+        <br><br>
+
+        <label for="statesel" id="statesel" >choose you state: </label>
+        <select name="statesel" id="statesel" size="3" multiple>
+            <option value="Choosest">Choose state</option>
+            <option value="punj">punjabi</option>
+            <option value="himachal pardesh">himachal pardesh</option>
+            <option value="hr">Harayana</option>
+            <option value="kr">Kerala</option>
+            <option value="tn">Tamil Nadiu</option>
+        </select>
+
+
+        <br><br>
+        <label for="selfile" >choose file.</label>
+        <input type="file" name="selfile" id="selfile" accept="image">\
+        <br><br>
+
+        <input type="submit" id="submitform" value="submit from"><br>
+        <input type="reset" id="reset"value="reset" ><br>
+        <input type="image" name="imgbtn" id="imgbtn" src="image\submitimage.webp" width="
+        100" height="40">
+    </form>
+</body>
+</html>

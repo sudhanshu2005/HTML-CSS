@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: navajowhite;
+            border: 10px pink solid;
+            padding: 40px;
+            display: grid;
+            /* grid-template-columns: 30% auto 50%;
+            grid-template-rows: 100px 120px 150px; */
+            grid-template: 100px 50px 80px/auto 20% 40%;
+            /* grid-row-gap: 30px;
+            grid-column-gap: 50px; */
+            grid-gap: 30px 20px;
+        }
+        .item{
+            border: 3px gold solid;
+            padding: 8px;
+            background-color: aqua;
+        }
+        #i3{
+            /* grid-row-start: 2; */
+            /* grid-row-end:  span 2; */
+            grid-row: 2/4;
+        }
+        #i7{
+            /* grid-column-start: 4;
+            grid-column-end: span 2; */
+            grid-column: 4/span 2;
+        }
+        #i9{
+            grid-area: 3/5/span 1/span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item" id="i3">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item" id="i7">item 7</div>
+        <div class="item">item 8</div>
+        <div class="item" id="i9">item 9</div>
+    </div>
+</body>
+</html>
